@@ -1,11 +1,11 @@
-dependents:
-  - "gva-ncarney/crunchy-template-clone"
-  - "!qwerty-*" # include
-  - "!qwerty1-*" # exclude
+#dependents:
+#  - "gva-ncarney/crunchy-template-clone"
+#  - "!qwerty-*" # include
+#  - "!qwerty1-*" # exclude
 
-additional:
-  - "another-one-*" # include
-  - "!not-this-*" # exclude
+#additional:
+#  - "another-one-*" # include
+#  - "!not-this-*" # exclude
 
 
 files:
