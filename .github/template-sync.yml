@@ -1,10 +1,10 @@
 dependents:
-  - "crunchy-template-master*"
+  - "gva-ncarney/crunchy-template-clone*"
 #  - "!qwerty-*" # include
 #  - "!qwerty1-*" # exclude
 
 additional:
-  - "runchy-template-clone*" # include
+#  - "runchy-template-clone*" # include
 #  - "!not-this-*" # exclude
 
 
