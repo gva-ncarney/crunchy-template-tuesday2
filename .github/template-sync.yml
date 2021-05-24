@@ -4,7 +4,7 @@
 #  - "!qwerty1-*" # exclude
 
 additional:
-  - "crunchy-template-clone"
+  - "gva-ncarney/crunchy-template-clone"
 
 files:
   - ".gitignore"  # include
