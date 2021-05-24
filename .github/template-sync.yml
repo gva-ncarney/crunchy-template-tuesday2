@@ -1,12 +1,10 @@
-dependents:
+# dependents:
 #  - "gva-ncarney/crunchy-template-clone*"
 #  - "!qwerty-*" # include
 #  - "!qwerty1-*" # exclude
 
 additional:
-  - "crunchy-template-clone*" # include
-#  - "!not-this-*" # exclude
-
+  - "crunchy-template-clone"
 
 files:
   - ".gitignore"  # include
