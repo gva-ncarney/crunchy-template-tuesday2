@@ -1,5 +1,5 @@
-#dependents:
-#  - "gva-ncarney/crunchy-template-clone"
+dependents:
+  - "runchy-template-clone*"
 #  - "!qwerty-*" # include
 #  - "!qwerty1-*" # exclude
 
