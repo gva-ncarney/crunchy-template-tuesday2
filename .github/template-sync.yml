@@ -5,7 +5,7 @@ dependents:
 additional:
   - "another-one-*" # include
   - "!not-this-*" # exclude
-  - "crunchy-template-clone*"
+  - "crunchy-template-master*"
 
 files:
   - ".gitignore"  # include
