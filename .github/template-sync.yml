@@ -1,11 +1,11 @@
 dependents:
   - "api-*" # include
   - "!lib-*" # exclude
-  - "crunchy-template-clone*"
 
 additional:
   - "another-one-*" # include
   - "!not-this-*" # exclude
+  - "crunchy-template-clone*"
 
 files:
   - ".gitignore"  # include
