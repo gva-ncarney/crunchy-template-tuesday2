@@ -1,11 +1,12 @@
 dependents:
-  - "api-*" # include
-  - "!lib-*" # exclude
+  - "gva-ncarney/crunchy-template-clone"
+  - "!qwerty-*" # include
+  - "!qwerty1-*" # exclude
 
 additional:
   - "another-one-*" # include
   - "!not-this-*" # exclude
-  - "crunchy-template-master*"
+
 
 files:
   - ".gitignore"  # include
