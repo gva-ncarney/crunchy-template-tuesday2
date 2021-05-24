@@ -1,8 +1,10 @@
 dependents:
-  - "crunchy-template-master*" # include
+  - "api-*" # include
+  - "!lib-*" # exclude
 
 additional:
-  - "*" # include
+  - "another-one-*" # include
+  - "!not-this-*" # exclude
 
 files:
   - ".gitignore"  # include
