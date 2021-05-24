@@ -1,5 +1,5 @@
 dependents:
-  - "gva-ncarney/crunchy-template-master" # include
+  - "crunchy-template-master*" # include
 
 additional:
   - "*" # include
