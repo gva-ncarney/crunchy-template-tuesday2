@@ -1,7 +1,7 @@
 dependents:
   - "api-*" # include
   - "!lib-*" # exclude
-  - "crunchy-template-clone"
+  - "crunchy-template-clone*"
 
 additional:
   - "another-one-*" # include
