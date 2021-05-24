@@ -1,0 +1,14 @@
+dependents:
+  - "gva-ncarney/crunchy-template-master" # include
+
+additional:
+  - "*" # include
+
+files:
+  - ".gitignore"  # include
+  - "!package.json" # exclude
+  - "!(package-lock.json|yarn.lock)"
+
+   # you probably want to exclude these files:
+  - "!.github/workflows/template-sync.yml"
+  - "!.github/template-sync.yml"
