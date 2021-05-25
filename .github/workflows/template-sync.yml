@@ -1,6 +1,6 @@
 on:
-  schedule:
-  - cron:  "*/15 * * * *"
+  - push
+  - pull_request
 jobs:
   repo-sync:
     runs-on: ubuntu-latest
