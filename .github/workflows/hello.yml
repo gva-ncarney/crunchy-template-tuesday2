@@ -1,3 +1,13 @@
+name: Hello
 
-- name: Hello Actions
-  uses: 2KAbhishek/GA-Hello@v1.0
+on:
+  - push
+  - pull_request
+
+jobs:
+  template-list-make:
+    runs-on: ubuntu-latest
+  
+    steps:
+      - name: Hello Actions
+        uses: 2KAbhishek/GA-Hello@v1.0
