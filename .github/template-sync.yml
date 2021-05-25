@@ -1,12 +1,12 @@
-dependents:
- # - "crunchy*"
+#dependents:
+#  - "crunchy*"
 #  - "!qwerty-*" # include
 #  - "!qwerty1-*" # exclude
 
 additional:
   - "!something-*"
   - "gva-ncarney/crunchy-template-*" # include
-  - "gva-ncarney/gcr-*"
+  - "!gva-ncarney/gcr-*"
 
 files:
   - ".gitignore"  # include
