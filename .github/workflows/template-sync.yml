@@ -1,19 +1,17 @@
-name: template-sync
-
 on:
-  - push
-  - pull_request
-
+  schedule:
+  - cron:  "*/15 * * * *"
 jobs:
-  template-sync:
-    timeout-minutes: 20
-
+  repo-sync:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v2
-      - uses: ahmadnassri/action-workflow-run-wait@v1 # wait for workflow_run to be successful
-      - uses: ahmadnassri/action-workflow-queue@v1 # avoid conflicts, by running this template one at a time
-      - uses: ahmadnassri/action-template-repository-sync@v1
+      # To use this repository's private action, you must check out the repository
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: actions-template-sync
+        uses: AndreasAugustin/actions-template-sync@v0.1.3-draft
         with:
-          github-token: ${{ secrets.GH_TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          source_repo_path: <owner/repo>
+          upstream_branch: <target_branch> # defaults to main
