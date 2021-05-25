@@ -1,5 +1,5 @@
 dependents:
-  - "crunchy*"
+ # - "crunchy*"
 #  - "!qwerty-*" # include
 #  - "!qwerty1-*" # exclude
 
