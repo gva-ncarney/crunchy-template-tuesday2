@@ -1,17 +1,15 @@
 name: Template List
-on: # rebuild any PRs and main branch changes
-  pull_request:
-  push:
-    branches:
-      - main
+on:
+  - push
+  - pull_request
 
 jobs:
-  template-list:
+  template-list-make:
     runs-on: ubuntu-latest
   
     steps:
       - name: Template Repository Usage Action
-      - uses: maael/template-repository-usage-action@v1.1.0
+        uses: maael/template-repository-usage-action@v1.1.0
         with:
           token: ${{ secrets.GH_TOKEN }}
           repo: 'crunchy-template-master'
