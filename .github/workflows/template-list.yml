@@ -1,4 +1,4 @@
-name: Template Repository Usage Action
+name: Template List
 on:
   - push
   - pull_request
@@ -9,4 +9,6 @@ jobs:
     steps:
       - name: Template Repository Usage Action
         uses: maael/template-repository-usage-action@v1.1.0
-
+        with:
+          token: ${{ secrets.GH_TOKEN }}
+          repo: 'crunchy-template-master'
