@@ -8,8 +8,8 @@ jobs:
     runs-on: ubuntu-latest
   
     steps:
-      - name: Template Repository Usage Action
+      - name: Template List Generator
         uses: maael/template-repository-usage-action@v1.1.0
-        with:
-          token: ${{ secrets.GH_TOKEN }}
-          repo: 'crunchy-template-master'
+  #      with:
+  #        token: ${{ secrets.GH_TOKEN }}
+  #        repo: 'crunchy-template-master'
