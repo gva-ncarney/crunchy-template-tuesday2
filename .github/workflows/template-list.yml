@@ -1,14 +1,26 @@
 name: Template List
-on:
-  - push
-  - pull_request
-jobs:
-  repo-list:
-    runs-on: ubuntu-latest
+on: # rebuild any PRs and main branch changes
+  pull_request:
+  push:
+    branches:
+      - main
+      - 'releases/*'
 
+jobs:
+  build: # make sure build/ci work properly
+    runs-on: ubuntu-latest
     steps:
-      - name: Template Repository Usage Action
-        uses: maael/template-repository-usage-action@v1.1.0
+      - uses: actions/checkout@v2
+      - run: |
+          npm install
+      - run: |
+          npm run all
+  test: # make sure the action works on a clean machine without building
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: ./
         with:
           token: ${{ secrets.GH_TOKEN }}
+          org: 'ThreadsStyling'
           repo: 'crunchy-template-master'
