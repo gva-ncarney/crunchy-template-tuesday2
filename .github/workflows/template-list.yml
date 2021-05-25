@@ -1,6 +1,12 @@
+name: Template Repository Usage Action
+on:
+  - push
+  - pull_request
+jobs:
+  repo-list:
+    runs-on: ubuntu-latest
 
+    steps:
+      - name: Template Repository Usage Action
+        uses: maael/template-repository-usage-action@v1.1.0
 
-
-
-- name: Template Repository Usage Action
-  uses: maael/template-repository-usage-action@v1.1.0
