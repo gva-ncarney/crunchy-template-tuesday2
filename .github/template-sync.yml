@@ -4,7 +4,7 @@ dependents:
 #  - "!qwerty1-*" # exclude
 
 additional:
-#  - "crunchy-template-*"
+  - "!something-*"
 
 files:
   - ".gitignore"  # include
