@@ -10,4 +10,4 @@ jobs:
   
     steps:
       - name: Hello Actions
-        uses: 2KAbhishek/GA-Hello@v1.0
+        uses: gva-ncarney/GA-Hello@v1.0
