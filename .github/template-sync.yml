@@ -5,8 +5,8 @@ dependents:
 
 additional:
   - "!something-*"
-  - "crunchy-template-*" # include
-  - "gcr-*"
+  - "gva-ncarney/crunchy-template-*" # include
+  - "gva-ncarney/gcr-*"
 
 files:
   - ".gitignore"  # include
