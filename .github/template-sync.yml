@@ -1,7 +1,7 @@
 dependents:
-  - "crunchy-template-*"
+  - "*"
 #  - "!qwerty-*" # include
-#  - "!qwerty1-*" # exclude
+  - "!gcr-*" # exclude
 
 additional:
   - "!something-*"
@@ -11,7 +11,8 @@ additional:
 files:
   - ".gitignore"  # include
   - "src/main.py"
-  - "README.md"
+  - 'template.txt"
+  - "!README.md"
  # - "!package.json" # exclude
  # - "!(package-lock.json|yarn.lock)"
 
