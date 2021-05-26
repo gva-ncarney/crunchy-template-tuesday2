@@ -3,17 +3,14 @@ name: Template Sync
 on:
   - push
   - pull_request
+
 jobs:
-  repo-sync:
+  template-sync:
     runs-on: ubuntu-latest
 
     steps:
-      # To use this repository's private action, you must check out the repository
-      - name: Checkout
-        uses: actions/checkout@v2
-      - name: actions-template-sync
-        uses: AndreasAugustin/actions-template-sync@v0.1.3-draft
+      - uses: actions/checkout@v2 # important!
+      - uses: ahmadnassri/action-template-repository-sync@v1
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          source_repo_path: gva-ncarney/crunchy-template-master
-          upstream_branch: main # defaults to main
+          github-token: ${{ secrets.GH_TOKEN }}
+          dry-run: true
