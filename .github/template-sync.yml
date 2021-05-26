@@ -1,10 +1,11 @@
-#dependents:
+dependents:
 #  - "!qwerty-*" # include
 #  - "!gcr-*" # exclude
+  - "crunchy-template-*"
 
 additional:
-  - "!something-*"
   - "crunchy-template-*" # include
+  - "!something-*"
   - "!gcr-*"
 
 files:
