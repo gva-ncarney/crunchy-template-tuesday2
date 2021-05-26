@@ -17,7 +17,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Template List Generator
-        uses: maael/template-repository-usage-action@v1.1.0
+      - uses: actions/checkout@v2
+      - uses: maael/template-repository-usage-action@v1.1.0
         with:
           token: ${{ secrets.GH_TOKEN }}
           org: 'gva-ncarney'
