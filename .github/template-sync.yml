@@ -1,6 +1,6 @@
-dependents:
+#dependents:
 #  - "!qwerty-*" # include
-  - "!gcr-*" # exclude
+#  - "!gcr-*" # exclude
 
 additional:
   - "!something-*"
