@@ -1,5 +1,4 @@
 dependents:
-  - "*"
 #  - "!qwerty-*" # include
   - "!gcr-*" # exclude
 
@@ -11,8 +10,8 @@ additional:
 files:
   - ".gitignore"  # include
   - "src/main.py"
-  - 'template.txt"
-  - "!README.md"
+  - "template.txt"
+  - "README.md"
  # - "!package.json" # exclude
  # - "!(package-lock.json|yarn.lock)"
 
