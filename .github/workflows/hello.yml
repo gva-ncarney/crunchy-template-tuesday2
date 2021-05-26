@@ -5,7 +5,7 @@ on:
   - pull_request
 
 jobs:
-  template-list-make:
+  hello_world:
     runs-on: ubuntu-latest
   
     steps:
