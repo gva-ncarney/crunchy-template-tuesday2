@@ -1,7 +1,7 @@
 name: Template List
 on:
-  - push
-  - pull_request
+  schedule:
+  - cron:  "*/60 * * * *"
 
 jobs:
   template-list-make:
