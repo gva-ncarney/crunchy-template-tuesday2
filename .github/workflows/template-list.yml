@@ -12,6 +12,3 @@ jobs:
         uses: maael/template-repository-usage-action@v1.1.0
         with:
           token: ${{ secrets.GH_TOKEN }}
-          org: 'gva-ncarney'
-          repo: 'crunchy-template-master'
-          readme_path: '/main/README.md'
