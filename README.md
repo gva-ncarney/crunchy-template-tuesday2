@@ -16,4 +16,8 @@ new bit
 
 
 <!-- TEMPLATE_LIST_START -->
+# 2 Repositories using template
+
+* [gva-ncarney/crunchy-template-another-one](https://github.com/gva-ncarney/crunchy-template-another-one)
+* [gva-ncarney/crunchy-template-clone](https://github.com/gva-ncarney/crunchy-template-clone)
 <!-- TEMPLATE_LIST_END -->
