@@ -1,20 +1,16 @@
 dependents:
-#  - "!qwerty-*" # include
-#  - "!gcr-*" # exclude
-  - "crunchy-template-*"
+  - "api-*" # include
+  - "!lib-*" # exclude
 
 additional:
-  - "crunchy-template-*" # include
-  - "!something-*"
-  - "!gcr-*"
+  - "another-one-*" # include
+  - "!not-this-*" # exclude
 
 files:
   - ".gitignore"  # include
-  - "src/main.py"
-  - "template.txt"
-  - "README.md"
- # - "!package.json" # exclude
- # - "!(package-lock.json|yarn.lock)"
+  - "!package.json" # exclude
+  - "!(package-lock.json|yarn.lock)"
+
 
    # you probably want to exclude these files:
   - "!.github/workflows/template-sync.yml"
