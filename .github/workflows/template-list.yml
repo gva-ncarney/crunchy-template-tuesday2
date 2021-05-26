@@ -14,3 +14,4 @@ jobs:
           token: ${{ secrets.GH_TOKEN }}
           org: 'gva-ncarney'
           repo: 'crunchy-template-master'
+          readme_path: 'https://raw.githubusercontent.com/gva-ncarney/crunchy-template-master/main/README.md'
