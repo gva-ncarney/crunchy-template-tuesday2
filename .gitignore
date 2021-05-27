@@ -1,1 +1,4 @@
 .templateversionrc
+.github/workflows/template-sync.yml
+.github/template-sync.yml
+
