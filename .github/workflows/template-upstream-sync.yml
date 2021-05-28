@@ -8,10 +8,17 @@ jobs:
     name: Template Upstream Sync
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2.3.4
+      # Checkout the current repo
+      - uses: actions/checkout@v2
+      # Fetch the history and unshallow the repo so that it can be used
+      - name: Fetch all history for all tags and branches
+        run: git fetch --prune --unshallow
+      # Pull the detached remote and do the magic
+      - name: Pull Detached Remote
+        uses: litetex/pull-detached-remote@v0.3
         with:
-          fetch-depth: 50  # greater than the number of commits you made
-      - uses: imba-tjd/rebase-upstream-action@master
-        with:
-          upstream: gva-ncarney/crunchy-template-master
-          branch: main
+          upstreamrepo: https://github.com/gva-ncarney/crunchy-template-master
+          upstreambranch: main
+        env:
+          GITHUB_PAT: ${{ secrets.GH_PAT }}
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
