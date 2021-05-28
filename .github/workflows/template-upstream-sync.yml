@@ -12,7 +12,7 @@ jobs:
 
       - name: Commit files
         run: |
-          git remote add -f crunchy-template-master gva-ncarney/crunchy-template-master.git
+          git remote add -f crunchy-template-master gva-ncarney/crunchy-template-master
           git remote update
           git diff master remotes/crunchy-template-master/main
           git remote rm crunchy-template-master
