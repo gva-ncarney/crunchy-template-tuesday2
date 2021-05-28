@@ -39,10 +39,10 @@ jobs:
           # Cleanup
           rm -rf \
             .github/template-sync.yml \
+            .github/workflows/template-sync.yml \
             .github/workflows/template-cleanup.yml \
             .github/workflows/template-list.yml \
-            .github/workflows/template-sync.yml \
-            .github/workflows/hello.yml
+            .github/workflows/hello.yml \
             .templateversionrc
       # Commit modified files
       - name: Commit files
