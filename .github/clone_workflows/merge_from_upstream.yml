@@ -1,0 +1,7 @@
+name: Template Cleanup
+on:
+  push
+  
+jobs:
+
+#something something darkside
