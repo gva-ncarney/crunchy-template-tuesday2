@@ -4,4 +4,8 @@ on:
   
 jobs:
 
-#something something darkside
+  template-upstream-sync:
+    name: Template Upstream Sync
+    runs-on: ubuntu-latest
+    if: github.event.repository.name != 'crunchy-template-master'
+    steps:
