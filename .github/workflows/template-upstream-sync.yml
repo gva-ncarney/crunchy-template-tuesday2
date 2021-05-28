@@ -1,21 +1,17 @@
-name: Template Cleanup
+name: Template Upstream Sync
 on:
   push
   
 jobs:
-
   template-upstream-sync:
+    if: github.event.repository.name != 'crunchy-template-master'
     name: Template Upstream Sync
     runs-on: ubuntu-latest
-    if: github.event.repository.name != 'crunchy-template-master'
     steps:
-
-      # Check out current repository
-      - name: Fetch Sources
-        uses: actions/checkout@v2.3.4
-      - name: upstream add
-        run: |
-          git remote add upstream https://github.com/gva-ncarney/crunchy-template-master.git
-          git fetch upstream
-          git merge upstream/main
-        #  git remote rm crunchy-template-master
+      - uses: actions/checkout@v2.3.4
+        with:
+          fetch-depth: 50  # greater than the number of commits you made
+      - uses: imba-tjd/rebase-upstream-action@master
+        with:
+          upstream: gva-ncarney/crunchy-template-master
+          branch: main
