@@ -37,10 +37,6 @@ jobs:
           # Remove lines marked with #REMOVE-ON-CLEANUP#
           find . -type f -exec sed -i '/#REMOVE-ON-CLEANUP#/d' {} +
           
-          # Move content
-
-          cp -R .github/clone_workflows/merge_from_upstream.yml .github/workflows/merge_from_upstream.yml
-
           # Cleanup
           rm -rf \
             .github/template-sync.yml \
