@@ -9,7 +9,10 @@ jobs:
     runs-on: ubuntu-latest
     if: github.event.repository.name != 'crunchy-template-master'
     steps:
-    
-      # Check out current repository
-      - name: Fetch Sources
-        uses: actions/checkout@v2
+
+      - name: Commit files
+        run: |
+          git remote add -f b gva-ncarney/crunchy-template-master.git
+          git remote update
+          git diff master remotes/b/master
+          git remote rm b
