@@ -15,10 +15,10 @@ jobs:
         run: git fetch --prune --unshallow
       # Pull the detached remote and do the magic
       - name: Pull Detached Remote
-        uses: litetex/pull-detached-remote@v0.3
+        uses: gva-ncarney/pull-detached-remote@v0.3
         with:
           upstreamrepo: https://github.com/gva-ncarney/crunchy-template-master
           upstreambranch: main
         env:
-          GITHUB_PAT: ${{ secrets.GH_PAT }}
+        #  GITHUB_PAT: ${{ secrets.GH_PAT }}
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
