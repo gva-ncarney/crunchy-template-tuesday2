@@ -16,8 +16,9 @@ new bit
 
 
 <!-- TEMPLATE_LIST_START -->
-# 5 Repositories using template
+# 6 Repositories using template
 
+* [gva-ncarney/crunchy-template-tuesday2](https://github.com/gva-ncarney/crunchy-template-tuesday2)
 * [gva-ncarney/crunchy-template-friday1](https://github.com/gva-ncarney/crunchy-template-friday1)
 * [gva-ncarney/crunchy-template-thursday](https://github.com/gva-ncarney/crunchy-template-thursday)
 * [gva-ncarney/crunchy-template-wednesday](https://github.com/gva-ncarney/crunchy-template-wednesday)
