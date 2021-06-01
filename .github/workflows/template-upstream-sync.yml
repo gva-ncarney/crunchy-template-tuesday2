@@ -20,5 +20,5 @@ jobs:
           upstreamrepo: https://github.com/gva-ncarney/crunchy-template-master
           upstreambranch: main
         env:
-       #   GITHUB_PAT: ${{ secrets.GH_PAT }}
+          GITHUB_PAT: ${{ secrets.GH_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
