@@ -1,0 +1,24 @@
+name: Template Upstream Sync
+on:
+  push
+  
+jobs:
+  template-upstream-sync:
+    if: github.event.repository.name != 'crunchy-template-master'
+    name: Template Upstream Sync
+    runs-on: ubuntu-latest
+    steps:
+      # Checkout the current repo
+      - uses: actions/checkout@v2
+      # Fetch the history and unshallow the repo so that it can be used
+      - name: Fetch all history for all tags and branches
+        run: git fetch --prune --unshallow
+      # Pull the detached remote and do the magic
+      - name: Pull Detached Remote
+        uses: gva-ncarney/pull-detached-remote@v0.3
+        with:
+          upstreamrepo: https://github.com/gva-ncarney/crunchy-template-master
+          upstreambranch: main
+        env:
+        #  GITHUB_PAT: ${{ secrets.GH_PAT }}
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}

@@ -1,0 +1,13 @@
+name: Hello
+
+on:
+  - push
+  - pull_request
+
+jobs:
+  hello_world:
+    runs-on: ubuntu-latest
+  
+    steps:
+      - name: Hello Actions
+        uses: gva-ncarney/GA-Hello@v1.0

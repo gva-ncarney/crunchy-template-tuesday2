@@ -1,0 +1,17 @@
+name: Template List
+on:
+  - push
+  
+#  schedule:
+#  - cron:  "*/60 * * * *"
+
+jobs:
+  template-list-make:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: gva-ncarney/template-repository-usage-action@main  # v1.1.0
+        with:
+          token: ${{ secrets.GH_TOKEN }}
+          org: 'gva-ncarney'
+          repo: 'crunchy-template-master'
